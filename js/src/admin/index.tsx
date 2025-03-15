@@ -28,7 +28,16 @@ app.initializers.add('liplum-html-widget', () => {
       })
       return (
         <div>
-          <aside class="html-warning">
+          <aside style={{
+            fontSize: "16px",
+            width: "750px",
+            textAlign: "justify",
+            paddingLeft: "1rem",
+            paddingTop: "0.5rem",
+            paddingBottom: "0.5rem",
+            marginBottom: "1rem",
+            borderLeft: "4px solid #ff6a00",
+          }}>
             {app.translator.trans(`${extName}.admin.warning`)}
           </aside>
           <div style={{
