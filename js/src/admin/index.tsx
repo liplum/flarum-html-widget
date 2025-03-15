@@ -15,10 +15,7 @@ app.initializers.add('liplum-html-widget', () => {
         $("#html-live-preview").attr("srcdoc", `${srcdoc}`);
       });
       return (
-        <div style={{
-          textAlign: "center",
-          margin: "0 auto",
-        }}>
+        <div>
           <aside class="html-warning">
             {app.translator.trans(`${extName}.admin.warning`)}
           </aside>
