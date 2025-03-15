@@ -39,8 +39,8 @@
       "category": "feature",
       "icon": {
         "name": "fas fa-code",
-        "backgroundColor": "#e34c26",
-        "color": "#ffffff"
+        "backgroundColor": "#ffffff",
+        "color": "#e34c26"
       }
     }
   }
