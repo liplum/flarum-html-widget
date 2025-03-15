@@ -4,9 +4,10 @@ import Widget, { WidgetAttrs } from 'flarum/extensions/afrux-forum-widgets-core/
 interface HtmlWidgetAttrs extends WidgetAttrs {
 
 }
+
 const htmlId = "liplum-html-widget"
 
-export default class HtmlWidgetWidget extends Widget<HtmlWidgetAttrs> {
+export default class HtmlWidget extends Widget<HtmlWidgetAttrs> {
   className(): string {
     return 'liplum-html-widget'
   }
