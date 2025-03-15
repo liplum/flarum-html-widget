@@ -1,10 +1,10 @@
 import app from 'flarum/admin/app';
 import commonApp from 'flarum/common/app';
 import registerWidget from '../common/register';
-import { extName } from '../common';
+import { extName } from '../r';
 // import SettingsModal from 'flarum/admin/components/SettingsModal';
 
-app.initializers.add('liplum-html-widget', () => {
+app.initializers.add(extName, () => {
   registerWidget(commonApp);
 
   app.extensionData
