@@ -10,17 +10,39 @@ app.initializers.add('liplum-html-widget', () => {
   app.extensionData
     .for(extName)
     .registerSetting(function () {
-      const warningMessage = app.translator.trans(`${extName}.admin.warning`);
-      $("html-textarea").on("keyup", () => {
+      $("#html-textarea").on("keyup", () => {
         const srcdoc = $("#html-textarea").val();
-        $("#live-preview").attr("srcdoc", `${srcdoc}`);
+        $("#html-live-preview").attr("srcdoc", `${srcdoc}`);
       });
       return (
-        <div className="Form-group settings-html" >
-          <aside class="html-warning"> {warningMessage} </aside>
-          <div class="text-and-prw">
-            <textarea id="html-textarea" className="FormControl html-textarea" bidi={this.setting(`${extName}.innerHtml`)} />
-            <iframe id="html-live-preview" > </iframe>
+        <div style={{
+          textAlign: "center",
+          margin: "0 auto",
+        }}>
+          <aside class="html-warning">
+            {app.translator.trans(`${extName}.admin.warning`)}
+          </aside>
+          <div style={{
+            display: "inline-flex",
+          }}>
+            <textarea id="html-textarea"
+              style={{
+                height: "300px",
+                width: "500px",
+                margin: "0 auto",
+                marginBottom: "50px",
+              }}
+              bidi={this.setting(`${extName}.innerHtml`)}
+            />
+            <iframe id="html-live-preview"
+              style={{
+                height: "300px",
+                width: "250px",
+                boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
+                marginLeft: "8px",
+                border: "0px",
+              }}
+            />
           </div>
         </div>
       );
