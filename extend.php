@@ -18,6 +18,12 @@ return [
   (new Extend\Settings)
     ->serializeToForum(
       'liplum-html-widget.innerHtml',
-      'liplum-html-widget.innerHtml'
+      'liplum-html-widget.innerHtml',
+    )->serializeToForum(
+      'liplum-html-widget.icon',
+      'liplum-html-widget.icon',
+    )->serializeToForum(
+      'liplum-html-widget.title',
+      'liplum-html-widget.title',
     ),
 ];
