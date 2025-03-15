@@ -31,7 +31,7 @@ app.initializers.add('liplum-html-widget', () => {
       return (
         <div className="Form-group">
           <aside style={{
-            fontSize: "16px",
+            fontSize: "1rem",
             width: "750px",
             textAlign: "justify",
             paddingLeft: "1rem",

@@ -8,7 +8,7 @@
     "flarum-ext",
     "widget",
     "afrux",
-    "custom html"
+    "custom-html"
   ],
   "type": "flarum-extension",
   "license": "MIT",
