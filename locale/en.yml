@@ -3,9 +3,9 @@ liplum-html-widget:
     warning:
       Injecting unknown HTML can create a potential security risk for your website. Write your own HTML or choose secure code from
       a trusted website. Also, remember to use the correct width to fit the widget sidebar.
-    icon:
-      label: Widget Icon
-      help: The icon of the widget, for example, "fas fa-code".
     title:
       label: Widget Title
       help: The title of the widget. If left empty, both the title and icon won't be displayed.
+    icon:
+      label: Widget Icon
+      help: The icon of the widget, for example, "fas fa-code".

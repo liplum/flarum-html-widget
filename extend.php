@@ -20,10 +20,10 @@ return [
       'liplum-html-widget.innerHtml',
       'liplum-html-widget.innerHtml',
     )->serializeToForum(
-      'liplum-html-widget.icon',
-      'liplum-html-widget.icon',
+      'liplum-html-widget.title',
+      'liplum-html-widget.title',
     )->serializeToForum(
-      'liplum-html-widget.title',
-      'liplum-html-widget.title',
+      'liplum-html-widget.icon',
+      'liplum-html-widget.icon',
     ),
 ];
