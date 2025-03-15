@@ -1,4 +1,11 @@
 liplum-html-widget:
   admin:
-    warning: Injecting unknown HTML creates a potential security risk for your website. Write your own html or choose a secure code from
+    warning:
+      Injecting unknown HTML creates a potential security risk for your website. Write your own html or choose a secure code from
       trusted website. Remember also to use correct width (to fit the widget sidebar).
+    icon:
+      label: Widget Icon
+      help: The icon of the widget, for example "fas fa-code".
+    title:
+      label: Widget Title
+      help: The title of the widget

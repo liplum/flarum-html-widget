@@ -9,6 +9,18 @@ app.initializers.add('liplum-html-widget', () => {
 
   app.extensionData
     .for(extName)
+    .registerSetting({
+      setting: `${extName}.icon`,
+      label: app.translator.trans(`${extName}.admin.icon.label`),
+      help: app.translator.trans(`${extName}.admin.icon.help`),
+      type: `text`,
+    })
+    .registerSetting({
+      setting: `${extName}.title`,
+      label: app.translator.trans(`${extName}.admin.title.label`),
+      help: app.translator.trans(`${extName}.admin.title.help`),
+      type: `text`,
+    })
     .registerSetting(function () {
       $("#html-textarea").on("keyup", () => {
         const srcdoc = $("#html-textarea").val();
