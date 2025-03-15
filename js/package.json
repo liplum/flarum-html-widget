@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "type": "module",
   "devDependencies": {
+    "@types/jquery": "^3.5.32",
     "flarum-tsconfig": "^1.0",
     "flarum-webpack-config": "^2.0",
     "typescript": "^5.7.2",

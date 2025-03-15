@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@types/jquery':
+        specifier: ^3.5.32
+        version: 3.5.32
       flarum-tsconfig:
         specifier: ^1.0
         version: 1.0.3
