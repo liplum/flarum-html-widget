@@ -22,12 +22,14 @@ app.initializers.add('liplum-html-widget', () => {
       type: `text`,
     })
     .registerSetting(function () {
-      $("#html-textarea").on("keyup", () => {
-        const srcdoc = $("#html-textarea").val();
-        $("#html-live-preview").attr("srcdoc", `${srcdoc}`);
-      })
+      const updateLivePreview = () => {
+        const innerHtml = $("#html-textarea").val();
+        $("#html-live-preview").html(`${innerHtml}`);
+      }
+      $("#html-textarea").on("keyup", updateLivePreview)
+      $(updateLivePreview)
       return (
-        <div>
+        <div className="Form-group">
           <aside style={{
             fontSize: "16px",
             width: "750px",
@@ -52,8 +54,7 @@ app.initializers.add('liplum-html-widget', () => {
               }}
               bidi={this.setting(`${extName}.innerHtml`)}
             />
-            <iframe id="html-live-preview"
-              srcdoc={app.data.settings[`${extName}.innerHtml`]}
+            <div id="html-live-preview"
               style={{
                 height: "300px",
                 width: "480px",
