@@ -44,6 +44,7 @@ app.initializers.add('liplum-html-widget', () => {
               bidi={this.setting(`${extName}.innerHtml`)}
             />
             <iframe id="html-live-preview"
+              srcdoc={app.data.settings[`${extName}.innerHtml`]}
               style={{
                 height: "300px",
                 width: "480px",
