@@ -11,9 +11,9 @@ app.initializers.add('liplum-html-widget', () => {
     .for(extName)
     .registerSetting(function () {
       const warningMessage = app.translator.trans(`${extName}.admin.warning`);
-      $("textarea").on("keyup", () => {
+      $("html-textarea").on("keyup", () => {
         const srcdoc = $("#html-textarea").val();
-        $("#liveoutp").attr("srcdoc", `${srcdoc}`);
+        $("#live-preview").attr("srcdoc", `${srcdoc}`);
       });
       return (
         <div className="Form-group settings-html" >
