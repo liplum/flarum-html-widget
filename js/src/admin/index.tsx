@@ -25,7 +25,7 @@ app.initializers.add('liplum-html-widget', () => {
       $("#html-textarea").on("keyup", () => {
         const srcdoc = $("#html-textarea").val();
         $("#html-live-preview").attr("srcdoc", `${srcdoc}`);
-      });
+      })
       return (
         <div>
           <aside class="html-warning">
@@ -46,8 +46,7 @@ app.initializers.add('liplum-html-widget', () => {
             <iframe id="html-live-preview"
               style={{
                 height: "300px",
-                width: "250px",
-                boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
+                width: "480px",
                 marginLeft: "8px",
                 border: "0px",
               }}
