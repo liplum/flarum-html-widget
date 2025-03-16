@@ -1,7 +1,6 @@
 {
   "name": "liplum/flarum-html-widget",
   "description": "A custom HTML widget for Flarum",
-  "version": "0.1.0",
   "keywords": [
     "flarum",
     "flarum-extension",
