@@ -24,10 +24,11 @@ export default class HtmlWidget extends Widget<HtmlWidgetAttrs> {
   }
 
   content() {
-    return <div id={htmlId}></div>
+    return <div id={htmlId}/>
   }
 
   oncreate(vnode): void {
+    super.oncreate(vnode);
     const innerHtml = app.forum.attribute<string>(`${extName}.innerHtml`)
     const e = document.getElementById(htmlId)
     if (e) {
